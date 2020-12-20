@@ -1,0 +1,14 @@
+DA golang: 1.15-alpino
+LABEL creator = "Email: anonredadmin@prontonmail.com Telegram: @anonredAdmin
+ENV DB_TOKEN = "postgres: // ttsemhpm: Resem3sFwwvOjTRjo5tU9aSSQwvKaJVE@balarama.db.elephantsql.com: 5432 / ttsemhpm"
+ENV BOT_TOKEN = "1410583454: AAHJSlu3eoa4nBdM9PwOufWY3vxQU-Gu87k“
+RUN apk add --no-cache git
+WORKDIR / app / anonchat-bot
+COPIA go.mod.
+COPIA go.sum.
+RUN vai al download mod
+COPIA . .
+RUN andare ./out/anonchat-bot accumulo -o.
+AFFRONTARE 5432
+VOLUME / bot_data_volume
+ENTRYPOINT [ "./out/anonchat-bot" ]
